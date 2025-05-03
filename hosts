@@ -1,0 +1,10 @@
+[RedHat]
+inetRouter    ansible_host=127.0.0.1 ansible_port=2222 ansible_private_key_file=....private_key bond_ip=192.168.255.1
+centralRouter ansible_host=127.0.0.1 ansible_port=2200 ansible_private_key_file=...private_key bond_ip=192.168.255.2
+office1Router ansible_host=127.0.0.1 ansible_port=2201 ansible_private_key_file=...private_key
+testClient1   ansible_host=127.0.0.1 ansible_port=2202 ansible_private_key_file=...private_key vlan_id=1 vlan_ip=10.10.10.254
+testServer1   ansible_host=127.0.0.1 ansible_port=2203 ansible_private_key_file=...private_keyprivate_key vlan_id=1 vlan_ip=10.10.10.1
+
+[Debian]
+testClient2   ansible_host=127.0.0.1 ansible_port=2204 ansible_private_key_file=...private_keyvlan_id=2 vlan_ip=10.10.10.254
+testServer2   ansible_host=127.0.0.1 ansible_port=2205 ansible_private_key_file=...private_key vlan_id=2 vlan_ip=10.10.10.1
