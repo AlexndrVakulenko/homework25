@@ -18,6 +18,8 @@ Playbook provision.yml устанавливает на VM необхоимай �
 Проверка создания bond -интерфеса между inetRouter и centralRouter:
 
 ![Image alt](https://github.com/AlexndrVakulenko/homework25/blob/main/03_check_ping_bond0.png)
+
 В районе выделенного ping был отключен инрейфейс eth1 на centralRouter командой
-        * ip link set down eth1
+__ ip link set down eth1
+
 Как видно, ping не прервался
